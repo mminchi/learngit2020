@@ -51,3 +51,9 @@ git checkout -- readme.txt
 
 -- github上关联本地库
 git remote add origin git@github.com:michaelliao/learngit.git
+
+-- 第一次推送master分支的所有内容至github
+git push -u origin master
+
+-- 将最新修改推送至github
+git push origin master
