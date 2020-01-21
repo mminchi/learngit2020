@@ -57,3 +57,6 @@ git push -u origin master
 
 -- 将最新修改推送至github
 git push origin master
+
+-- 从远程库克隆
+git clone git@github.com:mminchi/gitskills.git
