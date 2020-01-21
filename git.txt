@@ -17,7 +17,7 @@ git status
 
 -- 查看difference
 git diff
-
+git diff HEAD --readme.txt
 
 -- 查看历史版本记录
 git log
@@ -33,3 +33,21 @@ git reset --hard ac182a
 
 -- 记录每一次操作 ，便于版本回滚
 git reflog
+
+-- 原理
+工作区：learngit文件夹就是一个工作区
+版本库：Repository,工作区有一个隐藏目录.git。版本库中包括stage(暂存区)，
+自动创立的分支Master，以及指向Master的指针HEAD
+工作区         --->   暂存区  --->  
+第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
+
+第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
+
+因为我们创建Git版本库时，Git自动为我们创建了唯一一个master分支，
+所以，现在，git commit就是往master分支上提交更改。
+
+-- 可以丢弃工作区的修改：
+git checkout -- readme.txt
+
+-- github上关联本地库
+git remote add origin git@github.com:michaelliao/learngit.git
