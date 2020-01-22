@@ -61,10 +61,16 @@ git push origin master
 -- 从远程库克隆
 git clone git@github.com:mminchi/gitskills.git
 
+-- 创建分支
+git branch <name>
 
 -- 切换分支(切换到分支b)
-git checkout -b dev   <=> git branch dev      git checkout dev(切换到分支b )
+git checkout -b dev   <=> git branch dev(创建分支)      git checkout dev(切换到分支b )
+git switch <name>
+-- 创建并切换到新的dev分支
+git switch -c dev
 -- 切换后对readme.txt 增加一行数据，最后在master分支上没有发现变化，在dev分支上才会有变化
+
 -- 查看当前分支
 git branch
 
@@ -73,3 +79,5 @@ git merge div
 
 -- 合并之后就可以放心删除dev分支了
 git branch -d dev
+
+-- 
