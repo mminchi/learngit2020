@@ -80,4 +80,8 @@ git merge div
 -- 合并之后就可以放心删除dev分支了
 git branch -d dev
 
--- 
+-- 在两个分支上都有新的提交，会无法进行合并，会有冲突。
+
+-- 查看分支合并图
+git log --graph 
+git log --graph --pretty=oneline --abbrev-commit
