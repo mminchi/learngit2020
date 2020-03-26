@@ -48,6 +48,7 @@ git reflog
 
 -- 可以丢弃工作区的修改：
 git checkout -- readme.txt
+git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
 
 --又到了小结时间。
 
